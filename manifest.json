@@ -1,0 +1,19 @@
+{
+    "name": "网页文本修改器",
+    "version": "0.1",
+    "description": "将网页中的文本设置为可修改状态, 双击编辑内容",
+    "manifest_version": 2,
+    "icons": {
+        "16": "logo.png",
+        "32": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    },
+    "browser_action": {
+        "default_icon": "logo.png"
+    },
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["index.js"]
+    }]
+}
